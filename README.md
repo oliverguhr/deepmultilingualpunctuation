@@ -17,7 +17,7 @@ pip install deepmultilingualpunctuation
 ## Usage
 The ```PunctuationModel``` class an process texts of any length. Note that processing of very long texts can be time consuming.
 
-### restore punctuation
+### Restore Punctuation
 ```python
 model = PunctuationModel()
 text = "My name is Clara and I live in Berkeley California Ist das eine Frage Frau Müller"
@@ -29,7 +29,7 @@ print(result)
 > My name is Clara and I live in Berkeley, California. Ist das eine Frage, Frau Müller?
 
 
-### predict labels 
+### Predict Labels 
 ```python
 model = PunctuationModel()
 text = "My name is Clara and I live in Berkeley California Ist das eine Frage Frau Müller"
