@@ -19,6 +19,8 @@ The ```PunctuationModel``` class an process texts of any length. Note that proce
 
 ### Restore Punctuation
 ```python
+from deepmultilingualpunctuation import PunctuationModel
+
 model = PunctuationModel()
 text = "My name is Clara and I live in Berkeley California Ist das eine Frage Frau Müller"
 result = model.restore_punctuation(text)
@@ -31,6 +33,8 @@ print(result)
 
 ### Predict Labels 
 ```python
+from deepmultilingualpunctuation import PunctuationModel
+
 model = PunctuationModel()
 text = "My name is Clara and I live in Berkeley California Ist das eine Frage Frau Müller"
 clean_text = model.preprocess(text)
