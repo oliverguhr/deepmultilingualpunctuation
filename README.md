@@ -6,6 +6,9 @@ This uses [our "FullStop" model](https://huggingface.co/oliverguhr/fullstop-punc
 
 The code restores the following punctuation markers: **"." "," "?" "-" ":"**
 
+
+[Video Sample](https://user-images.githubusercontent.com/3495355/150677531-13f2037d-8673-4e34-8769-0da1784c2fe7.mp4)
+
 ## Install 
 
 To get started install the package from [pypi](https://pypi.org/project/deepmultilingualpunctuation/):
