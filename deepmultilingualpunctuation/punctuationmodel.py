@@ -14,7 +14,7 @@ class PunctuationModel():
         #remove markers except for markers in numbers 
         text = re.sub(r"(?<!\d)[.,;:!?](?!\d)","",text) 
         #todo: match acronyms https://stackoverflow.com/questions/35076016/regex-to-match-acronyms
-        text = text.split(" ")
+        text = text.split()
         return text
 
     def restore_punctuation(self,text):        
@@ -70,14 +70,14 @@ class PunctuationModel():
             result += word
             if label == "0":
                 result += " "
-            else:
+            if label in ".,?-:":
                 result += label+" "
         return result.strip()
 
 if __name__ == "__main__":    
     model = PunctuationModel()
 
-    text = "My name is Clara and I live in Berkeley California Ist das eine Frage Frau Müller"
+    text = "das , ist fies "
     # restore add missing punctuation
     result = model.restore_punctuation(text)
     print(result)
