@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="deepmultilingualpunctuation",
-    version="1.0.0",
+    version="1.0.1",
     author="Oliver Guhr",
     author_email="oliver.guhr@htw-dresden.de",
     description="A python package for deep multilingual punctuation prediction.",
