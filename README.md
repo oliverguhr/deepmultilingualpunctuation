@@ -64,6 +64,21 @@ The performance differs for the single punctuation markers as hyphens and colons
 | -             | 0.425 | 0.435 | 0.431 | 0.421 |
 | macro average | 0.775 | 0.814 | 0.782 | 0.762 |
 
+### Available Models
+
+| Languages                                  | Model                                                        |
+| ------------------------------------------ | ------------------------------------------------------------ |
+| English, Italian, French and German        | [oliverguhr/fullstop-punctuation-multilang-large](https://huggingface.co/oliverguhr/fullstop-punctuation-multilang-large) |
+| English, Italian, French, German and Dutch | [oliverguhr/fullstop-punctuation-multilingual-base](https://huggingface.co/oliverguhr/fullstop-punctuation-multilingual-base) |
+| Dutch                                      | [oliverguhr/fullstop-dutch-punctuation-prediction](https://huggingface.co/oliverguhr/fullstop-dutch-punctuation-prediction) |
+| Catalan                                    | [softcatala/fullstop-catalan-punctuation-prediction](https://huggingface.co/softcatala/fullstop-catalan-punctuation-prediction) |
+
+You can use different models by setting the model parameter:
+
+```python
+model = PunctuationModel(model = "oliverguhr/fullstop-dutch-punctuation-prediction")
+```
+
 
 ## References
 Please cite us if you found this useful:
