@@ -54,7 +54,7 @@ class PunctuationModel():
                 char_index += len(word) + 1
                 # if any subtoken of an word is labled as sentence end
                 # we label the whole word as sentence end        
-                label = 0
+                label = "0"
                 while result_index < len(result) and char_index > result[result_index]["end"] :
                     label = result[result_index]['entity']
                     score = result[result_index]['score']
