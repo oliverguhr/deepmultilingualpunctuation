@@ -49,6 +49,30 @@ print(labled_words)
 
 > [['My', '0', 0.9999887], ['name', '0', 0.99998665], ['is', '0', 0.9998579], ['Clara', '0', 0.6752215], ['and', '0', 0.99990904], ['I', '0', 0.9999877], ['live', '0', 0.9999839], ['in', '0', 0.9999515], ['Berkeley', ',', 0.99800044], ['California', '.', 0.99534047], ['Ist', '0', 0.99998784], ['das', '0', 0.99999154], ['eine', '0', 0.9999918], ['Frage', ',', 0.99622655], ['Frau', '0', 0.9999889], ['Müller', '?', 0.99863917]]
 
+## Languages
+
+### Models
+
+| Languages                                  | Model                                                        |
+| ------------------------------------------ | ------------------------------------------------------------ |
+| English, Italian, French and German        | [oliverguhr/fullstop-punctuation-multilang-large](https://huggingface.co/oliverguhr/fullstop-punctuation-multilang-large) |
+| English, Italian, French, German and Dutch | [oliverguhr/fullstop-punctuation-multilingual-sonar-base](https://huggingface.co/oliverguhr/fullstop-punctuation-multilingual-sonar-base) |
+| Dutch                                      | [oliverguhr/fullstop-dutch-sonar-punctuation-prediction](https://huggingface.co/oliverguhr/fullstop-dutch-sonar-punctuation-prediction) |
+
+### Community Models
+
+| Languages                                  | Model                                                        |
+| ------------------------------------------ | ------------------------------------------------------------ |
+|English, German, French, Spanish, Bulgarian, Italian, Polish, Dutch, Czech, Portugese, Slovak, Slovenian| [kredor/punctuate-all](https://huggingface.co/kredor/punctuate-all)                                                             |
+| Catalan                                    | [softcatala/fullstop-catalan-punctuation-prediction](https://huggingface.co/softcatala/fullstop-catalan-punctuation-prediction) |
+
+You can use different models by setting the model parameter:
+
+```python
+model = PunctuationModel(model = "oliverguhr/fullstop-dutch-punctuation-prediction")
+```
+
+
 
 ## Results 
 
@@ -63,21 +87,6 @@ The performance differs for the single punctuation markers as hyphens and colons
 | :             | 0.575 | 0.652 | 0.620 | 0.588 |
 | -             | 0.425 | 0.435 | 0.431 | 0.421 |
 | macro average | 0.775 | 0.814 | 0.782 | 0.762 |
-
-### Available Models
-
-| Languages                                  | Model                                                        |
-| ------------------------------------------ | ------------------------------------------------------------ |
-| English, Italian, French and German        | [oliverguhr/fullstop-punctuation-multilang-large](https://huggingface.co/oliverguhr/fullstop-punctuation-multilang-large) |
-| English, Italian, French, German and Dutch | [oliverguhr/fullstop-punctuation-multilingual-base](https://huggingface.co/oliverguhr/fullstop-punctuation-multilingual-base) |
-| Dutch                                      | [oliverguhr/fullstop-dutch-punctuation-prediction](https://huggingface.co/oliverguhr/fullstop-dutch-punctuation-prediction) |
-| Catalan                                    | [softcatala/fullstop-catalan-punctuation-prediction](https://huggingface.co/softcatala/fullstop-catalan-punctuation-prediction) |
-
-You can use different models by setting the model parameter:
-
-```python
-model = PunctuationModel(model = "oliverguhr/fullstop-dutch-punctuation-prediction")
-```
 
 
 ## References
