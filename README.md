@@ -72,6 +72,11 @@ You can use different models by setting the model parameter:
 model = PunctuationModel(model = "oliverguhr/fullstop-dutch-punctuation-prediction")
 ```
 
+## Where do I find the code and can I train my own model?
+
+Yes you can! For complete code of the reareach project take a look at [this repository](https://github.com/oliverguhr/fullstop-deep-punctuation-prediction).
+
+There is also an guide on [how to fine tune this model for you data / language](https://github.com/oliverguhr/fullstop-deep-punctuation-prediction/blob/main/other_languages/readme.md). 
 
 
 ## Results 
@@ -87,6 +92,7 @@ The performance differs for the single punctuation markers as hyphens and colons
 | :             | 0.575 | 0.652 | 0.620 | 0.588 |
 | -             | 0.425 | 0.435 | 0.431 | 0.421 |
 | macro average | 0.775 | 0.814 | 0.782 | 0.762 |
+
 
 
 ## References
