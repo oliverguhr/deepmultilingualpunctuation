@@ -4,7 +4,12 @@ import re
 import torch
 
 class PunctuationModel():
-    def __init__(self, model = "oliverguhr/fullstop-punctuation-multilang-large") -> None:        
+    def __init__(self, model_path = None):
+        if model_path is None:
+            model = "oliverguhr/fullstop-punctuation-multilang-large"
+        else:
+            model = model_path
+            
         if torch.cuda.is_available():
             self.pipe = pipeline("ner",model, aggregation_strategy="none", device=0)
         else:
